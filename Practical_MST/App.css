@@ -1,0 +1,131 @@
+/* Basic global styling */
+body {
+  background-color: #f4f6f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center container */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* Card box */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Counter number */
+.count {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+/* Button group */
+.btn-group button {
+  margin: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Limit warning */
+.limit {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Form styling */
+.form input {
+  width: 85%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;   
+  color: #000;              
+  font-size: 14px;
+}
+
+.form button {
+  margin-top: 10px;
+  width: 90%;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #aaa;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Error text */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+td {
+  color: #000; /* Ensures text inside rows is black */
+  background-color: #fff; /* Makes sure rows are visible */
+}
