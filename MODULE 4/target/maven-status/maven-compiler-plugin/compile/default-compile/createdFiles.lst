@@ -1,0 +1,9 @@
+com\demo\model\Product.class
+com\demo\model\Order.class
+com\demo\repository\CartRepository.class
+com\demo\controller\OrderController.class
+com\demo\controller\ProductController.class
+com\demo\model\CartItem.class
+com\demo\controller\CartController.class
+com\demo\repository\OrderRepository.class
+com\demo\repository\ProductRepository.class
