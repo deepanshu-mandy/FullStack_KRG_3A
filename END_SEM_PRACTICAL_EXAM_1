@@ -1,0 +1,24 @@
+SET - 08 (ODD UID)
+//create a react functional component named CounterApp that displays a number and an increment button. When the user clicks the button, the  count should increase by 1 each time.
+
+import React, { useState } from "react";
+
+function CounterApp() 
+{
+  const [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  return 
+  (
+    <div style={{ textAlign: "center", marginTop: "40px" }}>
+      <h2>Counter App</h2>
+      <h3>Count: {count}</h3>
+      <button onClick={handleIncrement}>Increment</button>
+    </div>
+  );
+}
+
+export default CounterApp;
