@@ -1,0 +1,52 @@
+SET -08 (ODD UID)
+Q3. In a small app with App->Header->Icon->UserProfile, pass the username from App to UserProfile, without using Context API. Demonstrate how prop drilling occurs.function App() {
+
+//App.js
+
+const username = "Deepanshu";
+
+  return 
+  (
+    <div>
+      <Header username={username} />
+    </div>
+  );
+}
+
+export default App;
+
+//Header.js
+function Header({ username }) {
+  return (
+    <div>
+      <h2>My App Header</h2>
+      <Icon username={username} />
+    </div>
+  );
+}
+
+export default Header;
+
+//Icon.js
+function Icon({ username }) {
+  return (
+    <div>
+      <p>Icon</p>
+      <UserProfile username={username} />
+    </div>
+  );
+}
+
+export default Icon;
+
+//UserPRofile.js
+function UserProfile({ username }) {
+  return <h3>User: {username}</h3>;
+}
+
+export default UserProfile;
+
+
+
+
+
